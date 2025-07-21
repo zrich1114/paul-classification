@@ -1,0 +1,36 @@
+LEXICAL & MORPHOLOGICAL FEATURES
+| Feature                                          | Type     | Why It Matters                            |
+| ------------------------------------------------ | -------- | ----------------------------------------- |
+| **Average Verse Length**                         | float    | Measures syntactic complexity             | [X]
+| **Verb Density (verbs per token)**               | float    | Captures action-heavy style               | []
+| **Participle Ratio (participles / total verbs)** | float    | Paul often chains participles             | []
+| **Pronoun Use (e.g. ἐγώ, σύ)**                   | dict/int | First- vs third-person focus              | []
+| **μὴ γένοιτο Count**                             | int      | Iconic Pauline idiom                      | []
+| **Top Lemmas**                                   | list/set | Vocab fingerprint; for similarity scoring | []
+| **Hapax Legomena Count**                         | int      | Vocabulary richness, unique usage         | []
+
+GRAMMATICAL DISTRIBUTIONS
+| Feature                                       | Type             | Why It Matters                        |
+| --------------------------------------------- | ---------------- | ------------------------------------- |
+| **Tense Distribution**                        | dict/proportions | Present vs aorist preferences         | [X]
+| **Voice Distribution**                        | dict/proportions | Active/middle/passive tendencies      | [X]
+| **Case Distribution (N, G, A, etc.)**         | dict             | Shows how nouns are used structurally | [X]
+| **POS Frequency Distribution**                | dict             | High-level grammatical fingerprint    | [X]
+| **Mood Ratios (e.g. subjunctive/indicative)** | float            | Stylistic register                    | [X]
+
+STRUCTURAL FEATURES
+| Feature                         | Type  | Why It Matters                 |
+| ------------------------------- | ----- | ------------------------------ |
+| **Type-Token Ratio**            | float | Lexical diversity              | [X]
+| **Tokens per Verse Mean/Std**   | float | Complexity variability         | [X]
+| **Verbs per Sentence Variance** | float | Stylistic rhythm or burstiness | [X]
+| **Sentence Fragment Ratio**     | float | Number of verbless sentences   | [X]
+
+RHETORICAL & DISCOURSE FEATURES
+| Feature                                            | Type     | Why It Matters                       |
+| -------------------------------------------------- | -------- | ------------------------------------ |
+| **Number of Questions**                            | int      | Paul uses rhetorical questions often | []
+| **Question\:Statement Ratio**                      | float    | Style differentiation                | []
+| **Conjunction Frequency (e.g. καί, δέ, γάρ, οὖν)** | dict/int | Shows how ideas are connected        | []
+| **N-gram Frequencies (bigrams/trigrams)**          | vector   | Captures signature phrases           | []
+
